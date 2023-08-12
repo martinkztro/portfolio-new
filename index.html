@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="Studying the last year of my Software Development Engineering degree at
+    the Universidad Autónoma de Baja California Sur (UABCS).
+    +3 years dedicated to Frontend Development and I love to constantly learn new
+    things in a self-taught way, as well as teach what I know to others.">
+    <meta name="keywords" content="Frontend Developer, Web Development, Frontend Jr., create a web, web portfolio">
+    <title>Portfolio Web - Martin Castro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="bg-[#ECE6C2] overflow-x-hidden scroll-smooth">
+
+    <!-- NAVBAR -->
+    <header id="header"
+        class="sticky top-0 bg-[#D2A24C] shadow-lg flex h-[7vh] xl:h-[10vh] items-center justify-between p-5 z-50 transition-[top] duration-500">
+        <figure class="flex items-center xl:w-1/6 xl:m-8 z-30">
+            <img class="w-10" src="images/computer.png" alt="">
+        </figure>
+        <nav id="nav"
+            class="bg-[#D2A24C] w-[80%] md:w-[60%] xl:w-full h-full z-40 xl:flex-row fixed xl:static text-4xl xl:text-xl flex-col flex flex-1 items-center justify-center xl:justify-end xl:m-8 gap-8 top-0 -right-full transition-[right] duration-500 p-10 xl:p-0">
+            <a class="nav-link hover:border-b-[1px] hover:shadow-md shadow-[#CC6B49] border-[#ECE6C2] hover:duration-700 transition-[border]" href="#">Home</a>
+            <a class="nav-link hover:border-b-[1px] hover:shadow-md shadow-[#CC6B49] border-[#ECE6C2] hover:duration-700 transition-[border]" href="#about">About</a>
+            <a class="nav-link hover:border-b-[1px] hover:shadow-md shadow-[#CC6B49] border-[#ECE6C2] hover:duration-700 transition-[border]" href="#skillset">Skillset</a>
+            <a class="nav-link hover:border-b-[1px] hover:shadow-md shadow-[#CC6B49] border-[#ECE6C2] hover:duration-700 transition-[border]" href="#projects">Projects</a>
+            <a class="nav-link hover:border-b-[1px] hover:shadow-md shadow-[#CC6B49] border-[#ECE6C2] hover:duration-700 transition-[border]" href="#contact">Contact</a>
+        </nav>
+
+        <div id="overlay" class="fixed inset-0 bg-black opacity-40 z-30 hidden transition-all duration-700"></div>
+
+        <button href="#" class="xl:hidden z-50">
+            <svg id="menu" class="w-9 h-9  transition-[hidden] duration-700" fill="none" stroke="currentColor"
+                stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25">
+                </path>
+            </svg>
+
+            <svg id="close" class="w-9 h-9 hidden transition-[hidden] duration-700" fill="none" stroke="currentColor"
+                stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+
+        </button>
+
+       
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="h-100 p-6 xl:flex xl:flex-col xl:justify-evenly">
+        <article
+            class="flex xl:flex-wrap flex-col-reverse items-center xl:items-start justify-around xl:justify-between xl:flex-row">
+            <div data-aos="fade-right" data-aos-duration="800" class="flex flex-col w-100 xl:mt-12 xl:gap-24 gap-7">
+
+                <h1 class="text-5xl xl:text-8xl text-center xl:text-left font-extrabold text-[#6F5643]">Hi, i'm <br>
+                    Martín Castro <br> <span class="text-[#cc6b49] font-black">Web Developer</span></h1>
+
+                <div class="flex items-center justify-center gap-3 xl:justify-start">
+                    <a class="bg-[#cc6b49] hover:shadow-md hover:duration-700 hover:ease-in-out hover:shadow-slate-600 px-11 py-2 xl:px-14 rounded-3xl text-2xl text-[#ECE6C2] font-black border-[1px] border-[#cc6b49] shadow-md"
+                        href="#">Contact</a>
+                    <a class="bg-transparent hover:shadow-md hover:duration-700 hover:ease-in-out hover:shadow-slate-600 px-11 py-2 xl:px-14 border-[1px] border-[#cc6b49] text-[#cc6b49] rounded-3xl text-2xl font-black shadow-md"
+                        href="images/english-cv.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="800">
+                <img class="w-80 xl:w-[30rem]" src="images/hero-img.png" alt="Foto mia">
+            </div>
+
+        </article>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section data-aos="fade-up" data-aos-duration="1000" id="about" class="mt-48 xl:mt-16 h-screen">
+
+        <h2 class="text-center p-1 mx-auto text-4xl xl:text-5xl text-[#CC6B49] font-black">About me</h2>
+
+        <img src="" alt="">
+
+        <article class="p-4 mt-3 xl:w-[50rem] xl:my-4 xl:mx-auto">
+            <p class="text-xl xl:text-2xl text-[#6F5643] border-2 border-[#CC6B49] border-t-0 rounded-bl-md rounded-br-md
+            p-6 font-normal">
+                Studying the last year of my <strong>Software Development Engineering</strong> degree at
+                the <strong>Universidad Autónoma de Baja California Sur (UABCS)</strong>.
+                <br> <br>
+                <strong>+3 years</strong> dedicated to <strong>Frontend Development</strong> and I love to constantly learn new
+                things in a <strong>self-taught way</strong>, as well as teach what I know to others.
+                <br> <br>
+                <b>"Don't put off until tomorrow what you can program today"</b>.
+            </p>
+        </article>
+
+        <img src="" alt="">
+    </section>
+
+    <!-- SKILLSET SECTION -->
+    <section data-aos="fade-up" data-aos-duration="1000" id="skillset" class="h-100 xl:my-6 mx-auto items-center">
+
+        <h2 class="text-center p-1 mx-auto text-4xl xl:text-5xl text-[#CC6B49] font-black">Skillset</h2>
+
+        <article class="grid grid-cols-2 p-4 gap-4 xl:grid-cols-4 xl:gap-1.5 xl:gap-y-5 xl:gap-x-1 place-items-center mt-12 mx-auto">
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3 gap-2">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/html-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">HTML</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-16" src="/images/skillset/css-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">CSS</p>
+            </div>
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/javascript-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">JAVASCRIPT</p>
+            </div>
+            
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/react-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">REACT</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/tailwind-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">TAILWIND CSS</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/sass-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">SASS</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/less-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">LESS</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/php-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">PHP</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/mysql-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">MYSQL</p>
+            </div>
+           
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/git-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">GIT</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/photoshop-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">PHOTOSHOP</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/premiere-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">PREMIERE</p>
+            </div>
+            
+
+
+            <div class="flex flex-col items-center justify-center w-[10rem] h-[10rem] p-3">
+                <div class="flex items-center justify-center p-6 rounded-full">
+                    <img class="w-32" src="/images/skillset/figma-logo.png" alt="">
+                </div>
+                <p class="text-center text-2xl font-black text-[#6F5643]">FIGMA</p>
+            </div>
+            
+        </article>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section data-aos="fade-up" data-aos-duration="1000" id="projects" class="h-100 mt-20 xl:mt-10 p-5">
+
+        <h2 class="text-center p-1 mx-auto text-4xl xl:text-5xl text-[#CC6B49] font-black">Projects</h2>
+
+        <article class="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-10">
+
+            <div class="border-2 border-[#cc6b49] border-t-0 rounded-br-2xl rounded-bl-2xl p-3 pt-0 flex flex-col gap-3">
+                <img class="w-auto rounded-br-2xl rounded-bl-2xl" src="/images/projects/firstproject_img.jpg" alt="">
+                <div class="flex flex-col gap-2">
+                    <a class="bg-[#cc6b49] hover:bg-[#ec7d54] hover:duration-700 text-center px-7 py-2 text-[#ece6c2] font-black text-xl rounded-2xl" href="https://myweb.kztro.tech/" target="_blank">Check it</a>
+                    <a class="bg-[#73bda8] hover:bg-[#8be6cc] hover:duration-700 text-center px-7 py-2 text-[#ece6d2] font-black text-xl rounded-2xl" href="https://github.com/martinkztro/freelancer-site.git" target="_blank">View code</a>
+                </div>
+            </div>
+
+            <div class="border-2 border-[#cc6b49] border-t-0 rounded-br-2xl rounded-bl-2xl p-3 pt-0 flex flex-col gap-3">
+                <img class="w-auto rounded-br-2xl rounded-bl-2xl" src="/images/projects/secondproject_img.jpg" alt="">
+                <div class="flex flex-col gap-2">
+                    <a class="bg-[#cc6b49] hover:bg-[#ec7d54] hover:duration-700 text-center px-7 py-2 text-[#ece6c2] font-black text-xl rounded-2xl" href="https://frontstore.kztro.tech/" target="_blank">Check it</a>
+                    <a class="bg-[#73bda8] hover:bg-[#8be6cc] hover:duration-700 text-center px-7 py-2 text-[#ece6d2] font-black text-xl rounded-2xl" href="https://github.com/martinkztro/frontend-store.git" target="_blank">View code</a>
+                </div>
+            </div>
+
+            <div class="border-2 border-[#cc6b49] border-t-0 rounded-br-2xl rounded-bl-2xl p-3 pt-0 flex flex-col gap-3">
+                <img class="w-auto rounded-br-2xl rounded-bl-2xl" src="/images/projects/thirdproject_img.jpg" alt="">
+                <div class="flex flex-col gap-2">
+                    <a class="bg-[#cc6b49] hover:bg-[#ec7d54] hover:duration-700 text-center px-7 py-2 text-[#ece6c2] font-black text-xl rounded-2xl" href="https://coffee.kztro.tech/" target="_blank">Check it</a>
+                    <a class="bg-[#73bda8] hover:bg-[#8be6cc] hover:duration-700 text-center px-7 py-2 text-[#ece6d2] font-black text-xl rounded-2xl" href="https://github.com/martinkztro/coffee-blog.git" target="_blank">View code</a>
+                </div>
+            </div>
+
+            <div class="border-2 border-[#cc6b49] border-t-0 rounded-br-2xl rounded-bl-2xl p-3 pt-0 flex flex-col gap-3">
+                <img class="w-auto rounded-br-2xl rounded-bl-2xl" src="/images/projects/fourtyproject_img.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <a class="bg-[#cc6b49] hover:bg-[#ec7d54] hover:duration-700 text-center px-7 py-2 text-[#ece6c2] font-black text-xl rounded-2xl" href="https://kztro.tech/" target="_blank">Check it</a>
+                    <a class="bg-[#73bda8] hover:bg-[#8be6cc] hover:duration-700 text-center px-7 py-2 text-[#ece6d2] font-black text-xl rounded-2xl" href="https://github.com/martinkztro/portfolio_web.git" target="_blank">View code</a>
+                </div>
+            </div>
+
+            <div class="border-2 border-[#cc6b49] border-t-0 rounded-br-2xl rounded-bl-2xl p-3 pt-0 flex flex-col gap-3">
+                <img class="w-auto rounded-br-2xl rounded-bl-2xl" src="/images/projects/fifthyproject_img.png" alt="">
+                <div class="flex flex-col gap-2">
+                    <a class="bg-[#cc6b49] hover:bg-[#ec7d54] hover:duration-700 text-center px-7 py-2 text-[#ece6c2] font-black text-xl rounded-2xl" href="https://fieldercommuniti.000webhostapp.com/pilot-fielder_community/index.html" target="_blank">Check it</a>
+                    <a class="bg-[#73bda8] hover:bg-[#8be6cc] hover:duration-700 text-center px-7 py-2 text-[#ece6d2] font-black text-xl rounded-2xl" href="">View code</a>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section data-aos="fade-up" data-aos-duration="1000" id="contact" class="h-100 mt-20 xl:mt-10 p-5">
+
+        <h2 class="text-center p-1 mx-auto text-4xl xl:text-5xl text-[#CC6B49] font-black">Contact</h2>
+
+        <article class="p-2 rounded-xl">
+
+            <p class="text-center font-black text-xl text-[#6F5643]">Contact me by filling out the form below:</p>
+
+            <form id="contact-form" method="POST" class="flex flex-col gap-2 mt-6 xl:w-[50%] xl:m-auto font-black">
+                
+                <label class="text-[#6F5643] text-xl font-bold" for="name">Name:</label>
+                <input class="w-full p-3 border-2 border-[#CC6B49] rounded-xl" type="text" name="name" id="name" placeholder="Type your name">
+
+                <label class="text-[#6F5643] text-xl font-bold" for="email">Contact:</label>
+                <input class="w-full p-3 border-2 border-[#CC6B49] rounded-xl" type="text" name="email" id="email" placeholder="Type your number or email">
+
+                <label class="text-[#6F5643] text-xl font-bold" for="subject">Subject:</label>
+                <input class="w-full p-3 border-2 border-[#CC6B49] rounded-xl" type="text" name="subject" id="subject" placeholder="Subject">
+
+                <label class="text-[#6F5643] text-xl font-bold" for="message">Message:</label>
+                <textarea class="border-2 p-3 border-[#CC6B49] rounded-xl" name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+
+                <input class="bg-[#73bda8] hover:shadow-md hover:duration-500 hover:transition-[hover:shadow-md] hover:ease-in-out hover:shadow-slate-600 text-[#ece6d2] text-2xl px-5 py-2 rounded-2xl mt-4 w-56 m-auto cursor-pointer" type="submit" value="Send">
+
+                <div id="form_error" class=" text-red-600 w-full mt-3 text-center">
+                    
+                </div>
+
+            </form>
+            <p class="text-center font-black text-xl text-[#6F5643] p-8 mt-10">Or look for me in my social networks:</p>
+            <div class="flex justify-between xl:justify-evenly mt-10 gap-5 p-4 ">
+                <a href="https://github.com/martinkztro" target="_blank" class=" hover:shadow-2xl hover:duration-700 border-[#CC6B49] border-2 shadow-black p-4 rounded-full">
+                    <img class="w-12" src="/images/social-media/github-icon.png" alt="">
+                </a>
+                <a href="https://instagram.com/_martinkstro?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class=" hover:shadow-2xl hover:duration-700 border-[#CC6B49] border-2 shadow-pink-600 p-4 rounded-full">
+                    <img class="w-12" src="/images/social-media/instagram-icon.png" alt="">
+                </a>
+                <a href="https://wa.me/qr/DSWKCZS2F5KCB1" target="_blank" class=" hover:shadow-2xl hover:duration-700 border-[#CC6B49] border-2 shadow-green-600 p-4 rounded-full">
+                    <img class="w-12" src="/images/social-media/whatsapp-icon.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/martin-kztro" target="_blank" class=" hover:shadow-2xl hover:duration-700 border-[#CC6B49] border-2 shadow-blue-500 p-4 rounded-full">
+                    <img class="w-12" src="/images/social-media/linkedin-icon.png" alt="">
+                </a>
+            </div>
+        </article>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS SECTION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
